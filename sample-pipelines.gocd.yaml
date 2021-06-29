@@ -4,8 +4,8 @@ pipelines:
   action-movies:
     group: movies
     secure_variables:
-      ARTIFACTORY_NPM_TOKEN_IN_QUOTES: "AES:MTIzNDU2NzhhYmRlcXdlcg==:cfY2dDriCE+2hC3CZktxSARyZLXKmTyKcOHPOwrPEKc="
-      TestPassword: AES:MTIzNDU2NzhhYmRlcXdlcg==:a22i+Ha56eplde0CTtn1c5LoEPTV9ZKRVvX9DUA8hhY=
+      ARTIFACTORY_NPM_TOKEN_IN_QUOTES: "AES:MTIzNDU2NzhhYmRlcXdlcg==:Q900zW4SwcmIIGLsDKwZBQ=="
+      TestPassword: AES:MTIzNDU2NzhhYmRlcXdlcg==:cPNqaJwI7qQb4TE09mCH9eAAAxLJurAMG2R7UQjDOEY=
     materials:
       action:
         plugin_configuration:
