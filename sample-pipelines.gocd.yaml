@@ -3,6 +3,9 @@ format_version: 4
 pipelines:
   action-movies:
     group: movies
+    secure_variables:
+      ARTIFACTORY_NPM_TOKEN_IN_QUOTES: "AES:MTIzNDU2NzhhYmRlcXdlcg==:cfY2dDriCE+2hC3CZktxSARyZLXKmTyKcOHPOwrPEKc="
+      TestPassword: AES:MTIzNDU2NzhhYmRlcXdlcg==:a22i+Ha56eplde0CTtn1c5LoEPTV9ZKRVvX9DUA8hhY=
     materials:
       action:
         plugin_configuration:
@@ -20,7 +23,7 @@ pipelines:
   action-movies-manual:
     group: movies
     materials:
-      action:
+      action-manual:
         plugin_configuration:
           id: git-path
         options:
