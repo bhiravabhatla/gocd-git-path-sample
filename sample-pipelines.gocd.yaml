@@ -20,6 +20,11 @@ pipelines:
             build:
               tasks:
                 - script: ./run.sh action
+              artifacts:
+                - build:
+                    source: action/movies.txt
+                    destination: ''
+           
   action-movies-manual:
     group: movies
     materials:
