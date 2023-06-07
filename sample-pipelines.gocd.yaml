@@ -86,7 +86,7 @@ pipelines:
       - build:
           jobs:
             build:
-              elastic_profile_id: "test-profile"
+              elastic_profile_id: "build-profile"
               tasks:
                 - script: ./run.sh animation
                 - script: ./run.sh action
