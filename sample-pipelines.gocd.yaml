@@ -4,16 +4,12 @@ environments:
   test:
     environment_variables:
       DEPLOYMENT: testing
-    secure_variables:
-      ENV_PASSWORD: "s&Du#@$xsSa"
     pipelines:
       - action-movies
       - action-movies-manual
   dev:
     environment_variables:
       DEPLOYMENT: testing
-    secure_variables:
-      ENV_PASSWORD: "s&Du#@$xsSa"
     pipelines:
       - animation-movies
       - animation-and-action-movies
