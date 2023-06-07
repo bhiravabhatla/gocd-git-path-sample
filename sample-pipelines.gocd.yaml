@@ -68,6 +68,8 @@ pipelines:
       - build:
           jobs:
             build:
+              resources:
+               - linux
               tasks:
                 - script: ./run.sh animation
   animation-and-action-movies:
@@ -84,6 +86,7 @@ pipelines:
       - build:
           jobs:
             build:
+              elastic_profile_id: "test-profile"
               tasks:
                 - script: ./run.sh animation
                 - script: ./run.sh action
